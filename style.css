@@ -32,9 +32,11 @@ html, body {
 }
 
 main {
-
+    height: 100%;
+/* background: #ff0000; */
     position: relative;
-    /* z-index: 3; */
+    z-index: 10;
+    
 }
 
 /* Page 1 styles */
@@ -588,7 +590,20 @@ nav {
     background-color: #efeae3;
     padding-left: 9vh;
 }
-
+#page6 h1{
+    padding: 5vh 0;
+    font-family: medium;
+    font-size: 5vw;
+}
+#page6 .orange-dot{
+color: #f03a0c;
+}
+#page6 p{
+    font-family: light;
+    font-size: 1vw;
+    letter-spacing: -0.01px;
+    line-height: 1.3vw;
+}
 #wework {
     position: relative;
     top: 10vh;
@@ -612,36 +627,53 @@ nav {
     font-weight: 400;
     font-size: 1vw;
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+ 
+}
+.swiper-slide {
+    height: 60%;
+    width: 30%;
+    background: #e0ddd8;
+    padding: 0 2vw;
+    border-radius: 10px;
+}
+.swiper {
+    overflow: visible;
+}
+.swiper-wrapper {
+    transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+}
+#page7{
+    height: 105vh;
+    width: 100%;
+    pointer-events: none;
+ 
+}
+
+
 
 /* Footer styles */
-/* footer {
-    height: 100vh;
-    width: 100%;
-    position: sticky;
-    bottom: 0;
 
-
-    z-index:-1;
-    background-color: #0b0500;
-    overflow: hidden;
-} */
 footer {
     height: 100vh;
     width: 100%;
 
-    position: relative;
-   
-    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
- 
+    position: fixed;
+   bottom: 0%;
+z-index: 9; 
     background-color: #0b0500;
     overflow: hidden;
 }
 #footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
+height: 100%;
+width: 100%;
 }
 #footercontent {
     
